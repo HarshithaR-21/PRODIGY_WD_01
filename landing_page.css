@@ -1,0 +1,124 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    background-image: url(https://tillstest.com/wp-content/uploads/2019/09/book-background-resize3_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsl(240, 50%, 50%);
+    z-index: 1;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#navbar ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar li{
+    list-style-type: none;
+    float: left;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    transition: background-color 0.5s;
+}
+#navbar li:hover{
+    background-color: rgb(255, 255, 255);
+}
+#navbar li:hover a{
+    color: hsl(219, 70%, 38%);
+}
+i{
+    margin-left: 10px;
+}
+
+#text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    max-width:300px;
+    height: 400px;
+    background-color: rgb(45, 192, 192);
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 30px 30px;
+}
+#heading{
+    padding: 20px 0;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    float: right;
+    height: 350px;
+    background-color: hsla(0, 1%, 67%, 0.758);
+    padding: 50px 50px;
+    margin-top: 50px;
+    margin-right: 200px;
+    border-radius: 20px;
+}
+.input{
+    min-height: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+}
+#submit{
+    width: 300px;
+    min-height: 30px;
+    border-radius: 15px;
+    background-color: hsl(0, 1%, 44%);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+#courses{
+   display: grid;
+   grid-template-columns: repeat(4 ,2fr);
+    backdrop-filter: blur(5px);
+    background-color: rgba(142, 140, 140, 0.372);
+}
+#courses div{
+    
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+    background-color: rgba(60, 83, 198, 0.317);
+}
+.imgs img{
+    width: 180px;
+    height: 200px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.imgs{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 20px 10px;
+}
+.imgs img:hover{
+    border: 5px solid white;
+}
